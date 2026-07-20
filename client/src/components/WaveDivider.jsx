@@ -13,10 +13,10 @@
  *
  * Both edges of the wave SVG are hardened against sub-pixel rounding:
  *
- *   - Bottom: path overshoots viewBox bottom to y=82, .wave-host has
+ *   - Bottom: path overshoots viewBox bottom to y=100, .wave-host has
  *     margin-bottom: -2px so the path's overshoot bleeds into the next
  *     section (which is the same color as the path).
- *   - Top: rect overflows viewBox top to y=-2 (extends 2 units above),
+ *   - Top: rect overflows viewBox top to y=-20 (extends 20 units above),
  *     .wave-host has margin-top: -2px so the rect's overshoot bleeds
  *     into the previous section (which is the same color as the rect).
  *
@@ -34,9 +34,9 @@ export function WaveDivider({ fill = '#99C0BF', background, flip = false, height
         height={height}
         style={{ display: 'block', overflow: 'visible', transform: flip ? 'rotate(180deg)' : 'none' }}
       >
-        {background && <rect x="0" y="-2" width="1440" height="84" fill={background} />}
+        {background && <rect x="0" y="-20" width="1440" height="120" fill={background} />}
         <path
-          d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,82 L0,82 Z"
+          d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,100 L0,100 Z"
           fill={fill}
         />
       </svg>
