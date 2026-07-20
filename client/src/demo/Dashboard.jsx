@@ -51,7 +51,7 @@ export default function Dashboard() {
       <PageHeader
         category="Workspace"
         title="Dashboard"
-        description="Cape Fear Hospitality Group, fictional 9-property the Carolina coast hospitality operator. All data synthetic."
+        description="Cape Fear Hospitality Group, fictional 9-property coastal North Carolina hospitality operator. All data synthetic."
       />
 
       <div data-tour-id="kpi-strip" className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">

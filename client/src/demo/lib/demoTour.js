@@ -120,7 +120,7 @@ export function buildTour({ onBookCall, onSidebarOpen, onSeeModel, onReturnToDas
         popover: {
           title: 'Welcome to Coast Analytics.',
           description:
-            "You're looking at synthetic data for Cape Fear Hospitality Group, a fictional 9-property the Carolina coast operator. The platform itself is real. Take a quick tour, or jump in and explore on your own.",
+            "You're looking at synthetic data for Cape Fear Hospitality Group, a fictional 9-property coastal North Carolina operator. The platform itself is real. Take a quick tour, or jump in and explore on your own.",
           showButtons: ['next', 'close'],
           nextBtnText: 'Take the tour',
           onPopoverRender: (popover) => injectSecondaryButton(popover, 'Skip and explore'),

@@ -251,7 +251,7 @@ function Showcase() {
         </Reveal>
         <Reveal delay={0.15}>
           <p className="mt-5 text-on-light text-[17px] leading-[1.8] max-w-3xl">
-            The demo runs on Cape Fear Hospitality Group, a fictional the Carolina coast operator. Synthetic
+            The demo runs on Cape Fear Hospitality Group, a fictional coastal North Carolina operator. Synthetic
             data, working models, configurable filters. Click any view below to open the live demo.
           </p>
         </Reveal>
@@ -421,7 +421,7 @@ function DemoCTA() {
         </Reveal>
         <Reveal delay={0.15}>
           <p className="text-on-dark text-[17px] leading-[1.8] max-w-2xl mx-auto mb-9">
-            Cape Fear Hospitality Group is a fictional 9-property the Carolina coast operator we built to show
+            Cape Fear Hospitality Group is a fictional 9-property coastal North Carolina operator we built to show
             you exactly what predictive intelligence looks like when it is purpose-built for hospitality.
           </p>
         </Reveal>

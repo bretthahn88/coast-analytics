@@ -22,7 +22,7 @@ The result: a list of guests who are genuinely at risk *given the season they ar
 
 ## Property-level patterns we see
 
-In the demo dataset (Cape Fear Hospitality Group, 9 fictional the Carolina coast properties), the at-risk rate by property looks like this:
+In the demo dataset (Cape Fear Hospitality Group, 9 fictional coastal North Carolina properties), the at-risk rate by property looks like this:
 
 - **Carolina Beach Tavern** (casual dining): roughly 2x the chain average. This is the canonical pattern. Casual dining attracts transient guests, and after Labor Day a meaningful slice never comes back.
 - **Bald Head Island Club** (luxury resort): well below average. Loyalty in luxury resorts is sticky once the first stay converts.

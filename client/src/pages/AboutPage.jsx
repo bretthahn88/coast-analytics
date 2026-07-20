@@ -277,7 +277,7 @@ function CTA() {
         </Reveal>
         <Reveal delay={0.15}>
           <p className="text-on-dark text-[17px] leading-[1.8] mb-9">
-            The live demo is built on a fictional the Carolina coast hospitality group, but the models are
+            The live demo is built on a fictional coastal North Carolina hospitality group, but the models are
             real. Book a call and we'll walk through your data together.
           </p>
         </Reveal>

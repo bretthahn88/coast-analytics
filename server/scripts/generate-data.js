@@ -1,7 +1,7 @@
 /**
  * Cape Fear Hospitality Group, synthetic data generator
  *
- * A fictional 9-property the Carolina coast hospitality operator. Generates
+ * A fictional 9-property coastal North Carolina hospitality operator. Generates
  * 2,400 guests, ~36,000 folios over 24 months, and 9,600 campaign records
  * with the eight embedded story arcs:
  *
@@ -52,7 +52,7 @@ const gauss = (mean, sd) => {
 };
 
 // ──────────────────────────────────────────────────────────────────────────
-// Reference data: 9 the Carolina coast properties
+// Reference data: 9 coastal North Carolina properties
 //   acv: avg folio value at that property (USD)
 //   churn: baseline churn probability per guest with this home property
 //   share: relative share of total guest base
@@ -131,7 +131,7 @@ function pickCategory(storeType) {
 }
 
 /**
- * the Carolina coast hospitality seasonality, inverse of a ski-resort pattern.
+ * coastal North Carolina hospitality seasonality, inverse of a ski-resort pattern.
  * Summer peak (Jun, Jul, Aug). Holiday bump late December. Shoulder dips
  * in November and Mar through Apr.
  *
@@ -573,7 +573,7 @@ const allRev = sortedBySpend.reduce((a, c) => a + c.lifetime_spend, 0);
 const summary = {
   generated_at: new Date().toISOString(),
   client: 'Cape Fear Hospitality Group',
-  client_type: 'Fictional 9-property the Carolina coast hospitality operator',
+  client_type: 'Fictional 9-property coastal North Carolina hospitality operator',
   totals: {
     customers: customers.length,
     transactions: transactions.length,
