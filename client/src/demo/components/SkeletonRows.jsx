@@ -17,7 +17,7 @@ export function SkeletonRows({ count = 5 }) {
             animation: 'pp-skeleton-shimmer 1.6s linear infinite',
             animationDelay: `${i * 0.12}s`,
             backgroundImage:
-              'linear-gradient(90deg, rgba(74,80,18,0) 0%, rgba(194,124,42,0.18) 50%, rgba(74,80,18,0) 100%)',
+              'linear-gradient(90deg, rgba(74,80,18,0) 0%, rgba(188,117,38,0.18) 50%, rgba(74,80,18,0) 100%)',
             backgroundSize: '200% 100%',
             backgroundRepeat: 'no-repeat',
           }}
@@ -39,7 +39,7 @@ export function SkeletonRows({ count = 5 }) {
  */
 export function PreRunEmpty({ children = 'Configure filters and run the model to see results.' }) {
   return (
-    <div className="rounded-md border border-gold/15 px-5 py-4 mb-3" style={{ background: 'rgba(194,124,42,0.04)' }}>
+    <div className="rounded-md border border-gold/15 px-5 py-4 mb-3" style={{ background: 'rgba(188,117,38,0.04)' }}>
       <p className="text-cream/70 text-[14px] leading-[1.6]">{children}</p>
     </div>
   );

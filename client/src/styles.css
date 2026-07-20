@@ -7,10 +7,10 @@
  * site pages (inline hex values), which are the design source of truth.
  *
  *   sage     #99C0BF   nav, secondary section bg
- *   charcoal #3a3635   dark section bg, primary text on light
+ *   charcoal #1a1a1a   dark section bg, primary text on light
  *   rust     #BC7526   accent, primary buttons, headline highlight
  *   cream    #E9DDD5   page background, light section bg
- *   cream-2  #eee5d3   warm secondary cream (alternating bands)
+ *   cream-2  #E9DDD5   warm secondary cream (alternating bands)
  *   tan      #E9DDD5   heron disc in logos
  *   black    #1a1a1a   deepest text
  *
@@ -21,25 +21,25 @@
 :root {
   /* Canonical brand tokens */
   --brand-sage:      #99C0BF;
-  --brand-sage-deep: #6c8585;
-  --brand-charcoal:  #3a3635;
+  --brand-sage-deep: #238287;
+  --brand-charcoal:  #1a1a1a;
   --brand-rust:      #BC7526;
   --brand-cream:     #E9DDD5;
-  --brand-cream-2:   #eee5d3;
+  --brand-cream-2:   #E9DDD5;
   --brand-tan:       #E9DDD5;
   --brand-black:     #1a1a1a;
   --brand-primary:   #054C5B;
 
   /* Legacy aliases (kept so existing classes resolve to new brand values) */
-  --color-dark:        #3a3635; /* charcoal */
+  --color-dark:        #1a1a1a; /* charcoal */
   --color-olive:       #99C0BF; /* sage (was placeholder teal) */
   --color-gold:        #BC7526; /* rust */
   --color-cream:       #E9DDD5;
-  --color-mid-olive:   #6c8585; /* deeper sage for cards on charcoal */
+  --color-mid-olive:   #238287; /* deeper sage for cards on charcoal */
   --color-dark-cream:  #E9DDD5; /* tan */
-  --color-body-dark:   #3a3635;
+  --color-body-dark:   #1a1a1a;
   --color-muted:       #6b6562;
-  --color-cream-2:     #eee5d3;
+  --color-cream-2:     #E9DDD5;
   color-scheme: light;
 }
 
@@ -191,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Inputs */
 .input-on-dark {
   background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(194,124,42,0.30);
+  border: 1px solid rgba(188,117,38,0.30);
   color: var(--color-cream);
   border-radius: 6px;
   padding: 12px 14px;
@@ -354,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
 .blog-prose a:hover { color: var(--color-gold); }
 
 .blog-prose code {
-  background: #eee5d3;
+  background: #E9DDD5;
   padding: 2px 6px;
   border-radius: 4px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-dark);
 }
 .blog-prose pre {
-  background: #eee5d3;
+  background: #E9DDD5;
   border-radius: 6px;
   padding: 16px 20px;
   overflow-x: auto;
@@ -377,7 +377,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-prose hr {
   border: none;
-  border-top: 1px solid rgba(194,124,42,0.3);
+  border-top: 1px solid rgba(188,117,38,0.3);
   margin: 40px 0;
 }
 

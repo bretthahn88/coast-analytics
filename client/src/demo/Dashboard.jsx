@@ -51,13 +51,13 @@ export default function Dashboard() {
       <PageHeader
         category="Workspace"
         title="Dashboard"
-        description="Northwood Hospitality Group, fictional 9-property the Carolina coast hospitality operator. All data synthetic."
+        description="Cape Fear Hospitality Group, fictional 9-property the Carolina coast hospitality operator. All data synthetic."
       />
 
       <div data-tour-id="kpi-strip" className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
         <KpiCard label="Total Guests" value={fmtNum(summary.totals.customers)} sub="Loyalty members" accent="cream" />
         <KpiCard label="Avg Folio Value" value={fmt$(overallACV)} sub="24-month rolling" accent="gold" />
-        <KpiCard label="Active Members" value={fmtNum(summary.totals.customers)} sub="Northwood Rewards" accent="gold" />
+        <KpiCard label="Active Members" value={fmtNum(summary.totals.customers)} sub="Cape Fear Rewards" accent="gold" />
         <KpiCard
           label="At-Risk Guests"
           value={fmtNum(summary.at_risk.count)}
@@ -152,7 +152,7 @@ export default function Dashboard() {
             <div
               key={r.customer_id}
               className="rounded-md p-4"
-              style={{ background: '#3a3635', border: '1px solid rgba(194,124,42,0.20)' }}
+              style={{ background: '#1a1a1a', border: '1px solid rgba(188,117,38,0.20)' }}
             >
               <div className="flex items-start justify-between gap-3 mb-2">
                 <div className="min-w-0 flex-1">
@@ -174,9 +174,9 @@ export default function Dashboard() {
 
         {/* Desktop: full table, columns kept intact via horizontal scroll
             fallback if the viewport is narrower than the layout demands. */}
-        <div className="hidden md:block overflow-x-auto rounded-md" style={{ border: '1px solid rgba(194,124,42,0.25)' }}>
+        <div className="hidden md:block overflow-x-auto rounded-md" style={{ border: '1px solid rgba(188,117,38,0.25)' }}>
           <table className="w-full text-[14px]">
-            <thead style={{ background: '#3a3635', color: '#BC7526' }}>
+            <thead style={{ background: '#1a1a1a', color: '#BC7526' }}>
               <tr>
                 <th className="text-left px-4 py-3 font-bold uppercase text-[12px] tracking-[0.08em]">#</th>
                 <th className="text-left px-4 py-3 font-bold uppercase text-[12px] tracking-[0.08em]">Guest</th>
@@ -189,7 +189,7 @@ export default function Dashboard() {
             </thead>
             <tbody>
               {(nba || []).map((r, i) => (
-                <tr key={r.customer_id} style={{ background: i % 2 === 0 ? '#3a3635' : '#6c8585', color: '#E9DDD5' }}>
+                <tr key={r.customer_id} style={{ background: i % 2 === 0 ? '#1a1a1a' : '#238287', color: '#E9DDD5' }}>
                   <td className="px-4 py-2.5 align-middle text-cream/60">{i + 1}</td>
                   <td className="px-4 py-2.5 align-middle font-bold">{r.name}</td>
                   <td className="px-4 py-2.5 align-middle text-cream/80">{r.home_store}</td>
@@ -224,7 +224,7 @@ function Signal({ label, value, sub, to }) {
 
 export function TierPill({ tier }) {
   const styles = {
-    Platinum: { background: 'rgba(194,124,42,0.20)', color: '#BC7526', border: '1px solid rgba(194,124,42,0.55)' },
+    Platinum: { background: 'rgba(188,117,38,0.20)', color: '#BC7526', border: '1px solid rgba(188,117,38,0.55)' },
     Gold:     { background: 'rgba(149,174,173,0.25)', color: '#E9DDD5', border: '1px solid rgba(149,174,173,0.65)' },
     Silver:   { background: 'rgba(224,212,188,0.18)', color: '#E9DDD5', border: '1px solid rgba(224,212,188,0.5)' },
   }[tier] || {};

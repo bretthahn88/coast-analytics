@@ -29,20 +29,20 @@ export default function HomePage() {
       <MarketingNav />
       <main className="flex-1">
         <Hero />
-        <WaveDivider fill="#99C0BF" background="#3a3635" />
+        <WaveDivider fill="#99C0BF" background="#1a1a1a" />
         <Problem />
         <WaveDivider fill="#E9DDD5" background="#99C0BF" />
         <WhatItDoes />
         {/* No wave between WhatItDoes (cream) and Showcase (cream): same
             color, so a wave-shape transition would be invisible noise. */}
         <Showcase />
-        <WaveDivider fill="#3a3635" background="#E9DDD5" />
+        <WaveDivider fill="#1a1a1a" background="#E9DDD5" />
         <WhoItsFor />
-        <WaveDivider fill="#eee5d3" background="#3a3635" />
+        <WaveDivider fill="#E9DDD5" background="#1a1a1a" />
         <HowItWorks />
-        <WaveDivider fill="#99C0BF" background="#eee5d3" />
+        <WaveDivider fill="#99C0BF" background="#E9DDD5" />
         <DemoCTA />
-        <WaveDivider fill="#3a3635" background="#99C0BF" />
+        <WaveDivider fill="#1a1a1a" background="#99C0BF" />
       </main>
       <Footer />
     </div>
@@ -53,7 +53,7 @@ function Hero() {
   return (
     <section
       className="relative overflow-hidden topo-pattern"
-      style={{ backgroundColor: '#3a3635' }}
+      style={{ backgroundColor: '#1a1a1a' }}
     >
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 md:pt-24 pb-20 md:pb-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 items-center">
@@ -111,7 +111,7 @@ function Hero() {
           <Reveal className="md:col-span-5" delay={0.2}>
             <img
               src="/images/hero-dashboard.png"
-              alt="Coast Analytics dashboard showing Northwood Hospitality Group's portfolio metrics, including total guests, avg folio value, active members, at-risk guests, and the 24-month guest value trend"
+              alt="Coast Analytics dashboard showing Cape Fear Hospitality Group's portfolio metrics, including total guests, avg folio value, active members, at-risk guests, and the 24-month guest value trend"
               loading="eager"
               className="block w-full h-auto max-h-[360px] md:max-h-none object-contain mx-auto"
               style={{
@@ -213,7 +213,7 @@ function WhatItDoes() {
 const SHOWCASE_CARDS = [
   {
     src: '/images/screenshot-dashboard.png',
-    alt: 'Northwood Hospitality Group dashboard showing KPIs, the Guest Value Trend, and the Guests by Tier breakdown',
+    alt: 'Cape Fear Hospitality Group dashboard showing KPIs, the Guest Value Trend, and the Guests by Tier breakdown',
     eyebrow: 'Dashboard',
     title: 'Your portfolio, scored nightly.',
     desc: 'Total guests, folio value, loyalty members, at-risk count. Refreshed across all nine properties.',
@@ -251,7 +251,7 @@ function Showcase() {
         </Reveal>
         <Reveal delay={0.15}>
           <p className="mt-5 text-on-light text-[17px] leading-[1.8] max-w-3xl">
-            The demo runs on Northwood Hospitality Group, a fictional the Carolina coast operator. Synthetic
+            The demo runs on Cape Fear Hospitality Group, a fictional the Carolina coast operator. Synthetic
             data, working models, configurable filters. Click any view below to open the live demo.
           </p>
         </Reveal>
@@ -269,7 +269,7 @@ function Showcase() {
               >
                 <div
                   className="overflow-hidden"
-                  style={{ aspectRatio: '16 / 9', background: '#3a3635' }}
+                  style={{ aspectRatio: '16 / 9', background: '#1a1a1a' }}
                 >
                   <img
                     src={c.src}
@@ -378,7 +378,7 @@ function HowItWorks() {
     },
   ];
   return (
-    <section style={{ background: '#eee5d3' }}>
+    <section style={{ background: '#E9DDD5' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 page-section">
         <Reveal>
           <div className="eyebrow eyebrow-dark mb-4">How It Works</div>
@@ -421,7 +421,7 @@ function DemoCTA() {
         </Reveal>
         <Reveal delay={0.15}>
           <p className="text-on-dark text-[17px] leading-[1.8] max-w-2xl mx-auto mb-9">
-            Northwood Hospitality Group is a fictional 9-property the Carolina coast operator we built to show
+            Cape Fear Hospitality Group is a fictional 9-property the Carolina coast operator we built to show
             you exactly what predictive intelligence looks like when it is purpose-built for hospitality.
           </p>
         </Reveal>

@@ -42,7 +42,7 @@ Without layers 2 and 3, marketing degrades into a broadcast tool. The list goes 
 
 ## What changes when you add the missing layers
 
-We worked with a fictional 9-property operator (Northwood Hospitality Group) for the live demo, and the patterns are real even if the data is synthetic:
+We worked with a fictional 9-property operator (Cape Fear Hospitality Group) for the live demo, and the patterns are real even if the data is synthetic:
 
 - A casual-dining property (the Tavern) churns at roughly 2x the rate of the resort properties. With churn risk scored per guest, the team can run win-back to the 200 highest-risk guests instead of the entire base.
 - 118 Silver-tier guests at the flagship hotel and a boutique sister property show a 4x spend-acceleration in the last 60 days. Welcoming those guests into the Gold preview tier early captures a meaningful upgrade window.

@@ -58,8 +58,8 @@ export default function DataManager() {
             <div
               className="rounded-md p-6 text-center transition-colors"
               style={{
-                border: '2px dashed rgba(194,124,42,0.35)',
-                background: 'rgba(194,124,42,0.05)',
+                border: '2px dashed rgba(188,117,38,0.35)',
+                background: 'rgba(188,117,38,0.05)',
               }}
             >
               <Upload className="mx-auto mb-3 text-gold" size={32} />
@@ -80,9 +80,9 @@ export default function DataManager() {
       </div>
 
       <Card title="Column mapper" subtitle="PMS, POS, and loyalty field name translations" className="mb-6">
-        <div className="overflow-x-auto rounded-md" style={{ border: '1px solid rgba(194,124,42,0.25)' }}>
+        <div className="overflow-x-auto rounded-md" style={{ border: '1px solid rgba(188,117,38,0.25)' }}>
           <table className="w-full text-[14px]">
-            <thead style={{ background: '#3a3635', color: '#BC7526' }}>
+            <thead style={{ background: '#1a1a1a', color: '#BC7526' }}>
               <tr>
                 <th className="px-4 py-3 text-left uppercase text-[12px] tracking-[0.08em]">Coast Analytics field</th>
                 <th className="px-4 py-3 text-left uppercase text-[12px] tracking-[0.08em]">PMS field</th>
@@ -93,7 +93,7 @@ export default function DataManager() {
             </thead>
             <tbody>
               {FIELD_MAP.map((f, i) => (
-                <tr key={f.our} style={{ background: i % 2 === 0 ? '#3a3635' : '#6c8585', color: '#E9DDD5' }}>
+                <tr key={f.our} style={{ background: i % 2 === 0 ? '#1a1a1a' : '#238287', color: '#E9DDD5' }}>
                   <td className="px-4 py-2.5 font-mono text-gold">{f.our}</td>
                   <td className="px-4 py-2.5 text-cream/70 font-mono">{f.pms}</td>
                   <td className="px-4 py-2.5 text-cream/70 font-mono">{f.pos}</td>
@@ -118,7 +118,7 @@ export default function DataManager() {
             ['phone', 92], ['acquired_at', 100], ['loyalty_enrolled', 100], ['opt_in_email', 100],
           ].map(([f, p]) => (
             <div key={f} className="px-4 py-3 rounded-md"
-                 style={{ border: '1px solid rgba(194,124,42,0.25)', background: 'rgba(194,124,42,0.05)' }}>
+                 style={{ border: '1px solid rgba(188,117,38,0.25)', background: 'rgba(188,117,38,0.05)' }}>
               <div className="font-mono text-gold text-[12px] mb-1">{f}</div>
               <div className="flex items-center gap-2">
                 <div className="h-1.5 flex-1 rounded-full overflow-hidden" style={{ background: 'rgba(245,240,232,0.15)' }}>

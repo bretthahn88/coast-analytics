@@ -40,19 +40,19 @@ export default function BlogPost() {
             heroImage overrides if present. Wave below transitions from
             cream-2 (the topo bg) into the cream PostBody. */}
         <PostHeroImage src={fm.heroImage || '/images/blog-topo-pattern.svg'} alt="" />
-        <WaveDivider fill="#E9DDD5" background="#eee5d3" />
+        <WaveDivider fill="#E9DDD5" background="#E9DDD5" />
         <PostBody html={html} />
-        <WaveDivider fill="#3a3635" background="#E9DDD5" />
+        <WaveDivider fill="#1a1a1a" background="#E9DDD5" />
         <AuthorCard />
         {related.length > 0 && (
           <>
-            <WaveDivider fill="#E9DDD5" background="#3a3635" />
+            <WaveDivider fill="#E9DDD5" background="#1a1a1a" />
             <RelatedSection posts={related} />
           </>
         )}
-        <WaveDivider fill="#99C0BF" background={related.length > 0 ? '#E9DDD5' : '#3a3635'} />
+        <WaveDivider fill="#99C0BF" background={related.length > 0 ? '#E9DDD5' : '#1a1a1a'} />
         <PostCTA />
-        <WaveDivider fill="#3a3635" background="#99C0BF" />
+        <WaveDivider fill="#1a1a1a" background="#99C0BF" />
       </main>
       <Footer />
     </div>
@@ -96,7 +96,7 @@ function PostHeader({ fm }) {
         </Reveal>
 
         <Reveal delay={0.35}>
-          <div className="mt-8" style={{ height: 1, background: 'rgba(194,124,42,0.4)' }} />
+          <div className="mt-8" style={{ height: 1, background: 'rgba(188,117,38,0.4)' }} />
         </Reveal>
       </div>
     </section>
@@ -111,7 +111,7 @@ function PostHeroImage({ src, alt }) {
     <div
       aria-hidden="true"
       style={{
-        background: '#eee5d3',
+        background: '#E9DDD5',
         lineHeight: 0,
       }}
     >
@@ -136,7 +136,7 @@ function PostBody({ html }) {
     <section className="bg-cream">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 page-section" style={{ maxWidth: 720 }}>
         <article className="blog-prose" dangerouslySetInnerHTML={{ __html: html }} />
-        <div className="mt-12" style={{ height: 1, background: 'rgba(194,124,42,0.4)' }} />
+        <div className="mt-12" style={{ height: 1, background: 'rgba(188,117,38,0.4)' }} />
       </div>
     </section>
   );

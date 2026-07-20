@@ -47,8 +47,8 @@ export function FilterSidebar({ filters, onChange, onRun, running = false, hasRu
         data-tour-mobile-toggle="model-config"
         className="lg:hidden mb-4 inline-flex items-center gap-2 px-3 py-2 rounded-md text-[13px]"
         style={{
-          background: 'rgba(194,124,42,0.12)',
-          border: '1px solid rgba(194,124,42,0.4)',
+          background: 'rgba(188,117,38,0.12)',
+          border: '1px solid rgba(188,117,38,0.4)',
           color: '#BC7526',
         }}
         aria-expanded={openOnMobile}
@@ -65,7 +65,7 @@ export function FilterSidebar({ filters, onChange, onRun, running = false, hasRu
         className={`${openOnMobile ? 'block' : 'hidden'} lg:block lg:w-[260px] lg:flex-none`}
         style={{
           background: '#23211f',
-          borderRight: '1px solid rgba(194,124,42,0.18)',
+          borderRight: '1px solid rgba(188,117,38,0.18)',
           borderRadius: 12,
         }}
       >

@@ -53,8 +53,8 @@ export function DemoCTABar() {
       aria-label="Book a call"
       className="fixed bottom-0 inset-x-0 z-30"
       style={{
-        background: '#3a3635',
-        borderTop: '1px solid rgba(194,124,42,0.4)',
+        background: '#1a1a1a',
+        borderTop: '1px solid rgba(188,117,38,0.4)',
         boxShadow: '0 -8px 24px rgba(0,0,0,0.35)',
       }}
     >

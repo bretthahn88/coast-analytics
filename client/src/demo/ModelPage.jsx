@@ -67,7 +67,7 @@ function ModelPageInner({ meta }) {
         action={
           <span
             className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md text-[11px] uppercase tracking-[0.08em]"
-            style={{ background: 'rgba(194,124,42,0.14)', color: '#BC7526', border: '1px solid rgba(194,124,42,0.4)' }}
+            style={{ background: 'rgba(188,117,38,0.14)', color: '#BC7526', border: '1px solid rgba(188,117,38,0.4)' }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-gold"/>
             engine: {engine}
@@ -317,9 +317,9 @@ const RENDERERS = {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <Card title="Flow matrix (prior year to current)">
-            <div className="overflow-x-auto rounded-md" style={{ border: '1px solid rgba(194,124,42,0.25)' }}>
+            <div className="overflow-x-auto rounded-md" style={{ border: '1px solid rgba(188,117,38,0.25)' }}>
               <table className="w-full text-[14px]">
-                <thead style={{ background: '#3a3635', color: '#BC7526' }}>
+                <thead style={{ background: '#1a1a1a', color: '#BC7526' }}>
                   <tr>
                     <th className="px-4 py-2.5 text-left uppercase text-[12px] tracking-[0.08em]">From / To</th>
                     {['Silver','Gold','Platinum'].map((t) => (
@@ -329,7 +329,7 @@ const RENDERERS = {
                 </thead>
                 <tbody>
                   {['Silver','Gold','Platinum'].map((from, i) => (
-                    <tr key={from} style={{ background: i % 2 === 0 ? '#3a3635' : '#6c8585', color: '#E9DDD5' }}>
+                    <tr key={from} style={{ background: i % 2 === 0 ? '#1a1a1a' : '#238287', color: '#E9DDD5' }}>
                       <td className="px-4 py-2.5 font-bold">{from}</td>
                       {['Silver','Gold','Platinum'].map((to) => {
                         const v = out.flows[`${from}->${to}`] || 0;
@@ -532,7 +532,7 @@ const RENDERERS = {
 
   'clv': (out) => {
     const top5 = out.distribution.find((d) => d.bucket === 'Top 5%')?.share || 0;
-    const colors = [CHART_PRIMARY, CHART_SECONDARY, '#E9DDD5', 'rgba(194,124,42,0.3)'];
+    const colors = [CHART_PRIMARY, CHART_SECONDARY, '#E9DDD5', 'rgba(188,117,38,0.3)'];
     return (
       <>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
@@ -617,9 +617,9 @@ const RENDERERS = {
           </Card>
         </div>
         <Card title="Co-occurrence matrix" subtitle="Categories bought together on the same folio">
-          <div className="overflow-x-auto rounded-md" style={{ border: '1px solid rgba(194,124,42,0.25)' }}>
+          <div className="overflow-x-auto rounded-md" style={{ border: '1px solid rgba(188,117,38,0.25)' }}>
             <table className="w-full text-[12px]">
-              <thead style={{ background: '#3a3635', color: '#BC7526' }}>
+              <thead style={{ background: '#1a1a1a', color: '#BC7526' }}>
                 <tr>
                   <th className="px-3 py-2 text-left uppercase tracking-[0.08em]">Anchor / With</th>
                   {cats.map((c) => <th key={c} className="px-3 py-2 text-right uppercase tracking-[0.08em]">{c}</th>)}
@@ -627,7 +627,7 @@ const RENDERERS = {
               </thead>
               <tbody>
                 {cats.map((from, ri) => (
-                  <tr key={from} style={{ background: ri % 2 === 0 ? '#3a3635' : '#6c8585', color: '#E9DDD5' }}>
+                  <tr key={from} style={{ background: ri % 2 === 0 ? '#1a1a1a' : '#238287', color: '#E9DDD5' }}>
                     <td className="px-3 py-2 font-bold">{from}</td>
                     {cats.map((to) => {
                       const v = out.cooccurrence[from][to];
@@ -635,8 +635,8 @@ const RENDERERS = {
                       const intensity = max ? Math.min(0.7, v / max) : 0;
                       return (
                         <td key={to} className="px-3 py-2 text-right tabular-nums"
-                            style={{ background: from === to ? 'transparent' : `rgba(194,124,42,${intensity})`,
-                                     color: from === to ? '#E9DDD5' : (intensity > 0.4 ? '#3a3635' : '#E9DDD5') }}>
+                            style={{ background: from === to ? 'transparent' : `rgba(188,117,38,${intensity})`,
+                                     color: from === to ? '#E9DDD5' : (intensity > 0.4 ? '#1a1a1a' : '#E9DDD5') }}>
                           {from === to ? <span className="text-cream/40">--</span> : fmtNum(v)}
                         </td>
                       );

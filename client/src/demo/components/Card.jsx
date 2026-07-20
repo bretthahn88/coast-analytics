@@ -5,7 +5,7 @@ export function Card({ title, subtitle, action, children, className = '' }) {
     <div
       className={`rounded-xl ${className}`}
       style={{
-        background: '#6c8585',
+        background: '#238287',
         borderTop: '3px solid #BC7526',
         boxShadow: '0 8px 32px rgba(58,54,53,0.25)',
         color: '#E9DDD5',
@@ -32,8 +32,8 @@ export function EmbedNote({ children }) {
     <div
       className="mt-4 text-[14px] flex items-start gap-2 px-4 py-3 rounded-md leading-[1.6]"
       style={{
-        background: 'rgba(194,124,42,0.08)',
-        border: '1px solid rgba(194,124,42,0.4)',
+        background: 'rgba(188,117,38,0.08)',
+        border: '1px solid rgba(188,117,38,0.4)',
         color: '#BC7526',
       }}
     >

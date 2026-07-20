@@ -9,7 +9,7 @@
  *              this in practice.
  *
  * Usage:
- *   <WaveDivider fill="#99C0BF" background="#3a3635" />   // charcoal -> sage
+ *   <WaveDivider fill="#99C0BF" background="#1a1a1a" />   // charcoal -> sage
  *
  * Both edges of the wave SVG are hardened against sub-pixel rounding:
  *

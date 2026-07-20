@@ -1,5 +1,5 @@
 /**
- * Loads the synthetic Northwood Hospitality Group data from /data and exposes
+ * Loads the synthetic Cape Fear Hospitality Group data from /data and exposes
  * read-only accessors. Caches in-memory after first load.
  */
 import fs from 'node:fs';

@@ -30,15 +30,15 @@ export default function PricingPage() {
       <MarketingNav />
       <main className="flex-1">
         <Hero />
-        <WaveDivider fill="#E9DDD5" background="#3a3635" />
+        <WaveDivider fill="#E9DDD5" background="#1a1a1a" />
         <Tiers />
         <WaveDivider fill="#99C0BF" background="#E9DDD5" />
         <Fractional />
         <WaveDivider fill="#E9DDD5" background="#99C0BF" />
         <FAQ />
-        <WaveDivider fill="#3a3635" background="#E9DDD5" />
+        <WaveDivider fill="#1a1a1a" background="#E9DDD5" />
         <FinalCTA />
-        <WaveDivider fill="#3a3635" background="#3a3635" />
+        <WaveDivider fill="#1a1a1a" background="#1a1a1a" />
       </main>
       <Footer />
     </div>

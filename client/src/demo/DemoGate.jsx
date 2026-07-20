@@ -70,7 +70,7 @@ export function DemoGate({ onUnlocked }) {
       aria-labelledby="ilp-gate-headline"
       className="fixed inset-0 z-50 flex items-center justify-center p-4 dark-section"
       style={{
-        background: '#3a3635',
+        background: '#1a1a1a',
         minHeight: '100vh',
         width: '100%',
         overflow: 'hidden',
@@ -79,7 +79,7 @@ export function DemoGate({ onUnlocked }) {
       <div
         className="w-full max-w-[480px] rounded-[12px] relative"
         style={{
-          background: '#6c8585',
+          background: '#238287',
           borderTop: '3px solid #BC7526',
           padding: '48px',
           boxShadow: '0 24px 64px rgba(0,0,0,0.45)',
@@ -264,7 +264,7 @@ function Field({ label, inputRef, required, type = 'text', value, onChange, plac
         style={{
           width: '100%',
           background: 'rgba(255,255,255,0.08)',
-          border: '1px solid rgba(194,124,42,0.35)',
+          border: '1px solid rgba(188,117,38,0.35)',
           color: '#E9DDD5',
           borderRadius: 6,
           padding: '12px 14px',
@@ -274,7 +274,7 @@ function Field({ label, inputRef, required, type = 'text', value, onChange, plac
           transition: 'border-color 0.2s ease',
         }}
         onFocus={(e) => { e.currentTarget.style.borderColor = '#BC7526'; }}
-        onBlur={(e) => { e.currentTarget.style.borderColor = 'rgba(194,124,42,0.35)'; }}
+        onBlur={(e) => { e.currentTarget.style.borderColor = 'rgba(188,117,38,0.35)'; }}
       />
     </label>
   );

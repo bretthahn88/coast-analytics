@@ -19,15 +19,15 @@ import { formatPostDate } from './lib/parsePosts.js';
  */
 
 const TOPO_PATTERN_SRC = '/images/blog-topo-pattern.svg';
-const TOPO_BG = '#eee5d3'; // brand-cream-2, matches the SVG's own rect bg
+const TOPO_BG = '#E9DDD5'; // brand-cream-2, matches the SVG's own rect bg
 
 const CATEGORY_ACCENT = {
   strategy:            '#99C0BF', // sage
   product:             '#BC7526', // rust
-  marketing:           '#3a3635', // charcoal
+  marketing:           '#1a1a1a', // charcoal
   hospitality:         '#99C0BF', // sage
   'loyalty economics': '#BC7526', // rust
-  'predictive models': '#3a3635', // charcoal
+  'predictive models': '#1a1a1a', // charcoal
 };
 const DEFAULT_ACCENT = '#BC7526'; // rust
 
@@ -154,7 +154,7 @@ export function BlogCard({ post, variant = 'standard' }) {
         <p
           className="text-[16px] leading-[1.65] mb-5 flex-1"
           style={{
-            color: '#3a3635',
+            color: '#1a1a1a',
             display: '-webkit-box',
             WebkitLineClamp: 2,
             WebkitBoxOrient: 'vertical',

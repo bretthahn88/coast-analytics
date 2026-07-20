@@ -2,7 +2,7 @@
  * Oak Island AI brand styling for Driver.js (v1.x) tour popovers.
  * Pulls from the canonical brand tokens defined in src/styles.css:
  *   cream      #E9DDD5
- *   charcoal   #3a3635
+ *   charcoal   #1a1a1a
  *   rust       #BC7526
  *
  * Driver.js renders the popover inside <div class="driver-popover">; buttons
@@ -15,7 +15,7 @@
 
 .driver-popover {
   background: var(--brand-cream, #E9DDD5) !important;
-  color: var(--brand-charcoal, #3a3635) !important;
+  color: var(--brand-charcoal, #1a1a1a) !important;
   border-radius: 12px !important;
   box-shadow: 0 12px 40px rgba(58, 54, 53, 0.18) !important;
   font-family: 'Poppins', system-ui, sans-serif !important;
@@ -25,7 +25,7 @@
 }
 
 .driver-popover-title {
-  color: var(--brand-charcoal, #3a3635) !important;
+  color: var(--brand-charcoal, #1a1a1a) !important;
   font-family: 'Poppins', system-ui, sans-serif !important;
   font-weight: 600 !important;
   font-size: 1.25rem !important;
@@ -34,7 +34,7 @@
 }
 
 .driver-popover-description {
-  color: var(--brand-charcoal, #3a3635) !important;
+  color: var(--brand-charcoal, #1a1a1a) !important;
   font-family: 'Poppins', system-ui, sans-serif !important;
   font-weight: 400 !important;
   font-size: 0.95rem !important;
@@ -75,8 +75,8 @@
 
 .driver-popover-prev-btn {
   background: transparent !important;
-  color: var(--brand-charcoal, #3a3635) !important;
-  border: 1px solid var(--brand-charcoal, #3a3635) !important;
+  color: var(--brand-charcoal, #1a1a1a) !important;
+  border: 1px solid var(--brand-charcoal, #1a1a1a) !important;
   text-shadow: none !important;
 }
 .driver-popover-prev-btn:hover {
@@ -84,7 +84,7 @@
 }
 
 .driver-popover-close-btn {
-  color: var(--brand-charcoal, #3a3635) !important;
+  color: var(--brand-charcoal, #1a1a1a) !important;
   opacity: 0.55 !important;
   transition: opacity 0.18s ease !important;
 }

@@ -31,15 +31,15 @@ export default function AboutPage() {
       <MarketingNav />
       <main className="flex-1">
         <Hero />
-        <WaveDivider fill="#eee5d3" background="#3a3635" />
+        <WaveDivider fill="#E9DDD5" background="#1a1a1a" />
         <Experience />
-        <WaveDivider fill="#E9DDD5" background="#eee5d3" />
+        <WaveDivider fill="#E9DDD5" background="#E9DDD5" />
         <Thesis />
         <WaveDivider fill="#99C0BF" background="#E9DDD5" />
         <Firm />
-        <WaveDivider fill="#3a3635" background="#99C0BF" />
+        <WaveDivider fill="#1a1a1a" background="#99C0BF" />
         <CTA />
-        <WaveDivider fill="#3a3635" background="#3a3635" />
+        <WaveDivider fill="#1a1a1a" background="#1a1a1a" />
       </main>
       <Footer />
     </div>
@@ -122,7 +122,7 @@ function Hero() {
 
 function Experience() {
   return (
-    <section style={{ background: '#eee5d3' }}>
+    <section style={{ background: '#E9DDD5' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 page-section text-center">
         <Reveal>
           <div className="eyebrow eyebrow-dark mb-5">Previous Experience</div>

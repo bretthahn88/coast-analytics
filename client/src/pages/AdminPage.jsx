@@ -218,7 +218,7 @@ function Table({ rows, columns, empty }) {
   return (
     <div className="overflow-x-auto rounded-lg border border-olive/20 bg-white shadow-card-light">
       <table className="w-full text-[15px]">
-        <thead style={{ background: '#3a3635', color: '#BC7526' }}>
+        <thead style={{ background: '#1a1a1a', color: '#BC7526' }}>
           <tr>
             {columns.map(([k, label]) => (
               <th key={k} className="px-4 py-3 text-left font-bold uppercase text-[12px] tracking-[0.08em]">{label}</th>

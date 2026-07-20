@@ -26,7 +26,7 @@ We score CLV in three pieces, and we publish all three:
 2. **Projected 12-month spend.** Annual spend trended forward, discounted by churn probability.
 3. **CLV concentration.** What share of total CLV the top 5% of guests represent.
 
-In the demo dataset, the top 5% of guests at Northwood Hospitality Group hold about 31% of total CLV. That number alone reframes the marketing question. If you are sending the same email to 100% of guests every week, you are diluting attention away from the 5% who actually fund the business.
+In the demo dataset, the top 5% of guests at Cape Fear Hospitality Group hold about 31% of total CLV. That number alone reframes the marketing question. If you are sending the same email to 100% of guests every week, you are diluting attention away from the 5% who actually fund the business.
 
 ## What you do with it
 

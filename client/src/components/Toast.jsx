@@ -21,9 +21,9 @@ export function ToastProvider({ children }) {
             className={`toast px-4 py-3 rounded-md border shadow-card-light max-w-sm text-sm`}
             style={{
               fontFamily: 'Georgia, serif',
-              background: t.type === 'error' ? '#E9DDD5' : t.type === 'success' ? '#3a3635' : '#E9DDD5',
-              color:      t.type === 'error' ? '#a83232' : t.type === 'success' ? '#BC7526' : '#3a3635',
-              borderColor: t.type === 'error' ? '#a83232' : t.type === 'success' ? '#BC7526' : 'rgba(194,124,42,0.5)',
+              background: t.type === 'error' ? '#E9DDD5' : t.type === 'success' ? '#1a1a1a' : '#E9DDD5',
+              color:      t.type === 'error' ? '#a83232' : t.type === 'success' ? '#BC7526' : '#1a1a1a',
+              borderColor: t.type === 'error' ? '#a83232' : t.type === 'success' ? '#BC7526' : 'rgba(188,117,38,0.5)',
             }}
           >
             {t.message}

@@ -1,5 +1,5 @@
 /**
- * Northwood Hospitality Group, synthetic data generator
+ * Cape Fear Hospitality Group, synthetic data generator
  *
  * A fictional 9-property the Carolina coast hospitality operator. Generates
  * 2,400 guests, ~36,000 folios over 24 months, and 9,600 campaign records
@@ -572,7 +572,7 @@ const allRev = sortedBySpend.reduce((a, c) => a + c.lifetime_spend, 0);
 
 const summary = {
   generated_at: new Date().toISOString(),
-  client: 'Northwood Hospitality Group',
+  client: 'Cape Fear Hospitality Group',
   client_type: 'Fictional 9-property the Carolina coast hospitality operator',
   totals: {
     customers: customers.length,
@@ -640,7 +640,7 @@ const holdouts = [
     id: 'HOL-001',
     name: 'Permanent 5% Marketing Holdout',
     pct: 5,
-    population: 'All Northwood Rewards members',
+    population: 'All Cape Fear Rewards members',
     members: Math.round(customers.length * 0.05),
     started_at: '2025-01-01',
     purpose: 'Provide a clean control population for measuring marketing program total lift across properties.',
@@ -672,7 +672,7 @@ function writeCSV(file, rows, columns) {
   fs.writeFileSync(path.join(DATA_DIR, file), header + '\n' + lines.join('\n'));
 }
 
-console.log('\nNorthwood Hospitality Group, synthetic data');
+console.log('\nCape Fear Hospitality Group, synthetic data');
 console.log('─'.repeat(50));
 
 writeJSON('summary.json', summary);

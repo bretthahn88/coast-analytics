@@ -14,8 +14,8 @@
 export function Logo({ size = 36, tone = 'on-sage', withWordmark = true, className = '' }) {
   const palette =
     tone === 'on-dark'  ? { text: '#E9DDD5', divider: 'rgba(245,240,232,0.35)' }
-  : tone === 'on-light' ? { text: '#3a3635', divider: 'rgba(58,54,53,0.25)' }
-  :                       { text: '#3a3635', divider: 'rgba(58,54,53,0.25)' }; // on-sage: charcoal text
+  : tone === 'on-light' ? { text: '#1a1a1a', divider: 'rgba(58,54,53,0.25)' }
+  :                       { text: '#1a1a1a', divider: 'rgba(58,54,53,0.25)' }; // on-sage: charcoal text
 
   return (
     <div className={`flex items-center gap-3 ${className}`}>

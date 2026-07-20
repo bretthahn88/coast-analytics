@@ -84,7 +84,7 @@ export function Footer() {
       <div className="border-t border-gold/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 text-center"
              style={{ color: 'rgba(245,240,232,0.45)', fontSize: 13 }}>
-          © {new Date().getFullYear()} Oak Island AI. Northwood Hospitality Group is a fictional demo client. All demo data is synthetic.
+          © {new Date().getFullYear()} Oak Island AI. Cape Fear Hospitality Group is a fictional demo client. All demo data is synthetic.
         </div>
       </div>
     </footer>

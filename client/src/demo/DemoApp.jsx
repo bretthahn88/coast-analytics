@@ -211,12 +211,12 @@ function TopBar({ onToggle, onTour }) {
           <Link to="/" className="flex items-center min-w-0"><Logo tone="on-light" /></Link>
           <span
             className="hidden sm:inline-flex items-center gap-2 ml-3 px-2.5 py-1 rounded-md font-bold uppercase tracking-[0.12em]"
-            style={{ background: '#3a3635', color: '#BC7526', fontSize: 10 }}
+            style={{ background: '#1a1a1a', color: '#BC7526', fontSize: 10 }}
           >
             Demo Mode
           </span>
           <span className="hidden md:inline text-dark/70 text-sm ml-2">
-            Northwood Hospitality Group
+            Cape Fear Hospitality Group
           </span>
         </div>
 

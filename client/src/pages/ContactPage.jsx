@@ -31,11 +31,11 @@ export default function ContactPage() {
       <MarketingNav />
       <main className="flex-1">
         <Hero />
-        <WaveDivider fill="#E9DDD5" background="#3a3635" />
+        <WaveDivider fill="#E9DDD5" background="#1a1a1a" />
         <FormSection />
         <WaveDivider fill="#99C0BF" background="#E9DDD5" />
         <CTAStrip />
-        <WaveDivider fill="#3a3635" background="#99C0BF" />
+        <WaveDivider fill="#1a1a1a" background="#99C0BF" />
       </main>
       <Footer />
     </div>

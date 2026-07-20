@@ -1,5 +1,5 @@
 /**
- * KPI card on a dark section: olive (#6c8585) background, gold top border.
+ * KPI card on a dark section: olive (#238287) background, gold top border.
  * Pass `accent` to change the value-text color: gold | cream | gold-bright | alert.
  */
 export function KpiCard({ label, value, sub, accent = 'gold', icon = null }) {
@@ -16,7 +16,7 @@ export function KpiCard({ label, value, sub, accent = 'gold', icon = null }) {
     <div
       className="rounded-xl"
       style={{
-        background: '#6c8585',
+        background: '#238287',
         borderTop: '3px solid #BC7526',
         padding: '20px 24px',
         boxShadow: '0 8px 32px rgba(58,54,53,0.25)',

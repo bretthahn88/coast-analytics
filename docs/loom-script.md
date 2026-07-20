@@ -11,7 +11,7 @@ Target length: **5 to 7 minutes**. Recommended camera: top-right bubble.
 > (PMS, POS, loyalty) but not the analytics layer that turns it into churn
 > prediction, guest lifetime value, and a real test/learn loop. That is what
 > Coast Analytics is. Let me show you what it actually looks like on
-> a fictional 9-property the Carolina coast operator we built called Northwood
+> a fictional 9-property the Carolina coast operator we built called Cape Fear
 > Hospitality Group.
 
 *[click `Explore Live Demo`]*

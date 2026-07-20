@@ -74,9 +74,9 @@ export function DataTable({ rows, columns, exportFilename, pageSize = 25, search
           </button>
         </div>
       </div>
-      <div className="overflow-x-auto rounded-md" style={{ border: '1px solid rgba(194,124,42,0.2)' }}>
+      <div className="overflow-x-auto rounded-md" style={{ border: '1px solid rgba(188,117,38,0.2)' }}>
         <table className="w-full text-[14px]">
-          <thead style={{ background: '#3a3635', color: '#BC7526' }}>
+          <thead style={{ background: '#1a1a1a', color: '#BC7526' }}>
             <tr>
               {columns.map((c) => (
                 <th
@@ -105,7 +105,7 @@ export function DataTable({ rows, columns, exportFilename, pageSize = 25, search
               <tr><td colSpan={columns.length} className="px-4 py-10 text-center text-cream/50">No rows.</td></tr>
             ) : view.map((r, i) => (
               <tr key={r.customer_id || r.id || i}
-                  style={{ background: i % 2 === 0 ? '#3a3635' : '#6c8585', color: '#E9DDD5' }}>
+                  style={{ background: i % 2 === 0 ? '#1a1a1a' : '#238287', color: '#E9DDD5' }}>
                 {columns.map((c) => (
                   <td key={c.key} className={`px-4 py-2.5 ${c.numeric ? 'text-right tabular-nums' : ''}`}>
                     {c.render ? c.render(r) : renderCell(r[c.key], c)}
@@ -120,13 +120,13 @@ export function DataTable({ rows, columns, exportFilename, pageSize = 25, search
         <div className="flex items-center justify-between mt-4 text-[13px] text-cream/60">
           <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page === 1}
                   className="px-3 py-1.5 rounded-md disabled:opacity-40 disabled:cursor-not-allowed hover:text-gold"
-                  style={{ border: '1px solid rgba(194,124,42,0.3)' }}>
+                  style={{ border: '1px solid rgba(188,117,38,0.3)' }}>
             Prev
           </button>
           <span>Page {page} / {pages}</span>
           <button onClick={() => setPage((p) => Math.min(pages, p + 1))} disabled={page === pages}
                   className="px-3 py-1.5 rounded-md disabled:opacity-40 disabled:cursor-not-allowed hover:text-gold"
-                  style={{ border: '1px solid rgba(194,124,42,0.3)' }}>
+                  style={{ border: '1px solid rgba(188,117,38,0.3)' }}>
             Next
           </button>
         </div>

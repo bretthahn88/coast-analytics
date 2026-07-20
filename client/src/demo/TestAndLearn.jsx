@@ -93,9 +93,9 @@ function Stepper({ step }) {
             <span
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md font-bold"
               style={{
-                background: isActive ? '#BC7526' : isDone ? 'rgba(194,124,42,0.15)' : 'rgba(194,124,42,0.05)',
-                color:      isActive ? '#3a3635' : isDone ? '#BC7526' : 'rgba(245,240,232,0.5)',
-                border: `1px solid ${isActive ? '#BC7526' : isDone ? 'rgba(194,124,42,0.4)' : 'rgba(194,124,42,0.15)'}`,
+                background: isActive ? '#BC7526' : isDone ? 'rgba(188,117,38,0.15)' : 'rgba(188,117,38,0.05)',
+                color:      isActive ? '#1a1a1a' : isDone ? '#BC7526' : 'rgba(245,240,232,0.5)',
+                border: `1px solid ${isActive ? '#BC7526' : isDone ? 'rgba(188,117,38,0.4)' : 'rgba(188,117,38,0.15)'}`,
               }}
             >
               <span>{n}</span>
@@ -229,7 +229,7 @@ function Step2({ test, setTest, onNext, onBack }) {
         </div>
       </div>
 
-      <div className="mt-6 rounded-md p-4" style={{ background: 'rgba(194,124,42,0.08)', border: '1px solid rgba(194,124,42,0.4)' }}>
+      <div className="mt-6 rounded-md p-4" style={{ background: 'rgba(188,117,38,0.08)', border: '1px solid rgba(188,117,38,0.4)' }}>
         <div className="eyebrow mb-1">Estimated Audience</div>
         <div className="text-gold text-[28px] font-bold tracking-tight leading-tight">
           {guests == null
@@ -303,8 +303,8 @@ function Step3({ test, setTest, onNext, onBack }) {
                 key={opt.v}
                 className="flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer text-[13px]"
                 style={{
-                  background: test.split.type === opt.v ? 'rgba(194,124,42,0.15)' : 'rgba(194,124,42,0.04)',
-                  border: `1px solid ${test.split.type === opt.v ? '#BC7526' : 'rgba(194,124,42,0.25)'}`,
+                  background: test.split.type === opt.v ? 'rgba(188,117,38,0.15)' : 'rgba(188,117,38,0.04)',
+                  border: `1px solid ${test.split.type === opt.v ? '#BC7526' : 'rgba(188,117,38,0.25)'}`,
                   color: test.split.type === opt.v ? '#BC7526' : '#E9DDD5',
                 }}
               >
@@ -356,14 +356,14 @@ function Step3({ test, setTest, onNext, onBack }) {
 
         <div className="flex items-center gap-3 flex-wrap">
           <div className="eyebrow">Randomization Seed</div>
-          <code className="px-2.5 py-1 rounded-md" style={{ background: '#3a3635', color: '#BC7526', fontFamily: 'ui-monospace, monospace' }}>
+          <code className="px-2.5 py-1 rounded-md" style={{ background: '#1a1a1a', color: '#BC7526', fontFamily: 'ui-monospace, monospace' }}>
             {test.split.seed}
           </code>
           <button
             type="button"
             onClick={() => updateSplit('seed', Math.floor(Math.random() * 999) + 1)}
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-[12px]"
-            style={{ background: 'rgba(194,124,42,0.10)', color: '#BC7526', border: '1px solid rgba(194,124,42,0.4)' }}
+            style={{ background: 'rgba(188,117,38,0.10)', color: '#BC7526', border: '1px solid rgba(188,117,38,0.4)' }}
           >
             <RefreshCw size={12} />
             Regenerate
@@ -401,7 +401,7 @@ function SplitPreview({ custom, holdoutPct }) {
   return (
     <div>
       <div className="eyebrow mb-2">Split Preview</div>
-      <div className="rounded-md overflow-hidden flex" style={{ height: 36, border: '1px solid rgba(194,124,42,0.3)' }}>
+      <div className="rounded-md overflow-hidden flex" style={{ height: 36, border: '1px solid rgba(188,117,38,0.3)' }}>
         {segments.map((s, i) => (
           <div
             key={i}
@@ -414,7 +414,7 @@ function SplitPreview({ custom, holdoutPct }) {
               fontSize: 11,
               fontFamily: 'Georgia, serif',
               fontWeight: 700,
-              color: i === 1 ? '#3a3635' : i === 2 ? '#3a3635' : '#E9DDD5',
+              color: i === 1 ? '#1a1a1a' : i === 2 ? '#1a1a1a' : '#E9DDD5',
               textTransform: 'uppercase',
               letterSpacing: '0.08em',
               minWidth: 0,
@@ -489,7 +489,7 @@ function Step4({ test, onReset }) {
   return (
     <Card title="Step 4 -- Groups Assigned" subtitle={test.name}>
       <div className="rounded-md p-5 mb-5"
-           style={{ background: 'rgba(194,124,42,0.10)', border: '1px solid rgba(194,124,42,0.4)' }}>
+           style={{ background: 'rgba(188,117,38,0.10)', border: '1px solid rgba(188,117,38,0.4)' }}>
         <div className="flex items-center gap-2 mb-2">
           <Check size={16} className="text-gold" />
           <span className="text-gold font-bold">Groups assigned. Export the CSV and upload to your CRM or campaign builder.</span>
@@ -506,7 +506,7 @@ function Step4({ test, onReset }) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
         {Object.entries(assignment.perVariant).map(([name, stats]) => (
           <div key={name} className="rounded-md p-4 flex items-center justify-between"
-               style={{ background: 'rgba(74,80,18,0.6)', border: '1px solid rgba(194,124,42,0.25)' }}>
+               style={{ background: 'rgba(74,80,18,0.6)', border: '1px solid rgba(188,117,38,0.25)' }}>
             <div>
               <div className="text-cream font-bold text-[16px]">{name}</div>
               <div className="text-cream/60 text-[12px] mt-0.5">
@@ -518,9 +518,9 @@ function Step4({ test, onReset }) {
         ))}
       </div>
 
-      <div className="overflow-x-auto rounded-md mb-6" style={{ border: '1px solid rgba(194,124,42,0.2)' }}>
+      <div className="overflow-x-auto rounded-md mb-6" style={{ border: '1px solid rgba(188,117,38,0.2)' }}>
         <table className="w-full text-[14px]">
-          <thead style={{ background: '#3a3635', color: '#BC7526' }}>
+          <thead style={{ background: '#1a1a1a', color: '#BC7526' }}>
             <tr>
               <th className="px-4 py-3 text-left uppercase text-[12px] tracking-[0.08em]">Customer</th>
               <th className="px-4 py-3 text-left uppercase text-[12px] tracking-[0.08em]">Store</th>
@@ -531,7 +531,7 @@ function Step4({ test, onReset }) {
           </thead>
           <tbody>
             {assignment.rows.slice(0, 25).map((r, i) => (
-              <tr key={r.customer_id} style={{ background: i % 2 === 0 ? '#3a3635' : '#6c8585', color: '#E9DDD5' }}>
+              <tr key={r.customer_id} style={{ background: i % 2 === 0 ? '#1a1a1a' : '#238287', color: '#E9DDD5' }}>
                 <td className="px-4 py-2.5 font-medium">{r.name}</td>
                 <td className="px-4 py-2.5 text-cream/80">{r.home_store}</td>
                 <td className="px-4 py-2.5">{r.tier}</td>
@@ -542,7 +542,7 @@ function Step4({ test, onReset }) {
           </tbody>
         </table>
         {assignment.rows.length > 25 && (
-          <div className="px-4 py-2.5 text-[12px] text-cream/50" style={{ background: '#3a3635' }}>
+          <div className="px-4 py-2.5 text-[12px] text-cream/50" style={{ background: '#1a1a1a' }}>
             ... {fmtNum(assignment.rows.length - 25)} more rows (full set in the CSV)
           </div>
         )}
@@ -563,9 +563,9 @@ function BalanceBadge({ ok }) {
   return (
     <span className="inline-flex items-center gap-1 text-[12px] font-bold px-2 py-1 rounded-md uppercase tracking-[0.06em]"
           style={{
-            background: ok ? 'rgba(46,204,113,0.14)' : 'rgba(194,124,42,0.12)',
+            background: ok ? 'rgba(46,204,113,0.14)' : 'rgba(188,117,38,0.12)',
             color: ok ? '#2ECC71' : '#BC7526',
-            border: `1px solid ${ok ? 'rgba(46,204,113,0.5)' : 'rgba(194,124,42,0.5)'}`,
+            border: `1px solid ${ok ? 'rgba(46,204,113,0.5)' : 'rgba(188,117,38,0.5)'}`,
           }}>
       {ok ? <Check size={12} /> : <AlertTriangle size={12} />}
       {ok ? 'Balanced' : 'Re-randomize'}
@@ -594,7 +594,7 @@ function CovariateBalanceCard({ balance }) {
     <div
       className="rounded-xl"
       style={{
-        background: '#6c8585',
+        background: '#238287',
         borderTop: '3px solid #BC7526',
         padding: '20px 24px',
         boxShadow: '0 8px 32px rgba(58,54,53,0.25)',
@@ -764,9 +764,9 @@ function ExperimentCard({ exp }) {
         <span
           className="text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-[0.08em]"
           style={{
-            background: exp.stat_sig ? 'rgba(194,124,42,0.18)' : 'rgba(194,124,42,0.08)',
+            background: exp.stat_sig ? 'rgba(188,117,38,0.18)' : 'rgba(188,117,38,0.08)',
             color: '#BC7526',
-            border: `1px solid ${exp.stat_sig ? '#BC7526' : 'rgba(194,124,42,0.4)'}`,
+            border: `1px solid ${exp.stat_sig ? '#BC7526' : 'rgba(188,117,38,0.4)'}`,
           }}
         >
           {exp.stat_sig ? `Stat-Sig - p=${exp.p_value}` : `Trending - p=${exp.p_value}`}
@@ -832,7 +832,7 @@ function ExperimentDetails({ exp }) {
   return (
     <div
       className="mt-4 rounded-md p-5 space-y-4"
-      style={{ background: 'rgba(194,124,42,0.05)', border: '1px solid rgba(194,124,42,0.25)' }}
+      style={{ background: 'rgba(188,117,38,0.05)', border: '1px solid rgba(188,117,38,0.25)' }}
     >
       <div>
         <div className="eyebrow mb-2">Hypothesis</div>
@@ -864,9 +864,9 @@ function ExperimentDetails({ exp }) {
         <span
           className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[12px] font-bold uppercase tracking-[0.08em]"
           style={{
-            background: exp.stat_sig ? 'rgba(46,204,113,0.12)' : 'rgba(194,124,42,0.10)',
+            background: exp.stat_sig ? 'rgba(46,204,113,0.12)' : 'rgba(188,117,38,0.10)',
             color: exp.stat_sig ? '#27AE60' : '#BC7526',
-            border: `1px solid ${exp.stat_sig ? 'rgba(39,174,96,0.5)' : 'rgba(194,124,42,0.4)'}`,
+            border: `1px solid ${exp.stat_sig ? 'rgba(39,174,96,0.5)' : 'rgba(188,117,38,0.4)'}`,
           }}
         >
           {exp.stat_sig ? 'Significant' : 'Not Significant'}
@@ -884,7 +884,7 @@ function ExperimentDetails({ exp }) {
 function DetailMetric({ label, variant }) {
   const fields = metricFields(variant);
   return (
-    <div className="rounded-md p-4" style={{ background: '#3a3635', border: '1px solid rgba(194,124,42,0.2)' }}>
+    <div className="rounded-md p-4" style={{ background: '#1a1a1a', border: '1px solid rgba(188,117,38,0.2)' }}>
       <div className="text-cream font-bold text-[14px] mb-2 leading-tight">{label}</div>
       <div className="text-cream/60 text-[12px] mb-3">{fmtNum(variant.size)} guests</div>
       <ul className="space-y-1 text-[13px]">
@@ -909,7 +909,7 @@ function formatVariantMetric(key, v) {
 
 function SmallStat({ label, children }) {
   return (
-    <div className="rounded-md p-3" style={{ background: '#3a3635', border: '1px solid rgba(194,124,42,0.2)' }}>
+    <div className="rounded-md p-3" style={{ background: '#1a1a1a', border: '1px solid rgba(188,117,38,0.2)' }}>
       <div className="eyebrow mb-1">{label}</div>
       <div className="text-[15px] leading-tight">{children}</div>
     </div>
@@ -944,7 +944,7 @@ function Holdouts() {
           action={
             <span
               className="text-[11px] px-2.5 py-1 rounded-md uppercase tracking-[0.08em] font-bold"
-              style={{ background: 'rgba(194,124,42,0.18)', color: '#BC7526', border: '1px solid #BC7526' }}
+              style={{ background: 'rgba(188,117,38,0.18)', color: '#BC7526', border: '1px solid #BC7526' }}
             >
               Active
             </span>
