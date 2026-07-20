@@ -6,7 +6,7 @@ import { WaveDivider } from '../components/WaveDivider.jsx';
 import { Reveal } from '../components/Reveal.jsx';
 import { useSEO } from '../lib/useSEO.js';
 
-const OAI_ABOUT = 'https://oak-island-ai.vercel.app/consultation';
+const OAI_ABOUT = 'https://www.oakislandmarketing.ai/about-us';
 
 /**
  * Section color rhythm:
