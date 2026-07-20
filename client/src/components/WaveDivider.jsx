@@ -32,7 +32,7 @@ export function WaveDivider({ fill = '#99C0BF', background, flip = false, height
         preserveAspectRatio="none"
         width="100%"
         height={height}
-        style={{ display: 'block', overflow: 'visible', transform: flip ? 'rotate(180deg)' : 'none' }}
+        style={{ display: 'block', lineHeight: 0, verticalAlign: 'top', overflow: 'visible', transform: flip ? 'rotate(180deg)' : 'none' }}
       >
         {background && <rect x="0" y="-20" width="1440" height="120" fill={background} />}
         <path

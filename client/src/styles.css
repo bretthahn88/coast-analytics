@@ -392,5 +392,13 @@ h1, h2, h3, h4, h5, h6 {
  * previous and next sections. Combined with the rect/path overshoots in
  * WaveDivider.jsx, this prevents sub-pixel rounding from exposing a
  * hairline at either edge on high-DPI mobile displays. */
-.wave-host { display: block; line-height: 0; margin-top: -2px; margin-bottom: -2px; }
+.wave-host {
+  display: block;
+  position: relative;
+  z-index: 1; /* paint above adjacent .dark-section (isolation:isolate) so the wave's overlap covers the seam */
+  line-height: 0;
+  font-size: 0;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
 a { color: inherit; }
