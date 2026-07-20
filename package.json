@@ -1,0 +1,26 @@
+{
+  "name": "coast-analytics",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Coast Analytics, CRM predictive intelligence and test/learn platform for multi-property hospitality operators, by Oak Island AI",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm install --workspace=client && npm install --workspace=server",
+    "seed": "node server/scripts/generate-data.js",
+    "dev": "concurrently -k -n SERVER,CLIENT -c green,cyan \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "npm run dev --workspace=server",
+    "dev:client": "npm run dev --workspace=client",
+    "build": "npm run build --workspace=client",
+    "start": "npm run start --workspace=server",
+    "vercel-build": "npm install --workspace=client && npm run build --workspace=client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

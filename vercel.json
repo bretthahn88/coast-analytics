@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": "client/dist",
+  "installCommand": "npm install",
+  "routes": [
+    { "handle": "filesystem" },
+    {
+      "src": "^/api/(.*)$",
+      "dest": "/api/index",
+      "headers": { "x-original-path": "$1" }
+    },
+    { "src": "^/api/?$", "dest": "/api/index" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 10,
+      "includeFiles": "data/**"
+    }
+  }
+}

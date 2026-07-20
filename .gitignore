@@ -1,0 +1,43 @@
+node_modules/
+dist/
+build/
+.next/
+.cache/
+
+# env
+.env
+.env.local
+.env.*.local
+
+# sqlite + local db files
+*.sqlite
+*.sqlite-journal
+*.db
+server/db/
+
+# python
+ml-service/.venv/
+ml-service/__pycache__/
+*.pyc
+
+# editor
+.vscode/
+.idea/
+.DS_Store
+
+# vercel
+.vercel/
+
+# claude code local settings (per-machine)
+.claude/settings.local.json
+.vercel
+
+# loose media files at the repo root only -- canonical copies live in
+# client/public/ (images/, videos/) and stay tracked. The leading "/"
+# anchors each pattern to the repo root so subdirectories aren't affected.
+/*.webp
+/*.mp4
+/*.mov
+/*.png
+/*.jpg
+/*.jpeg
