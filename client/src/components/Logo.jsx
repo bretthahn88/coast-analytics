@@ -20,7 +20,7 @@ export function Logo({ size = 36, tone = 'on-sage', withWordmark = true, classNa
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <img
-        src="/images/OAI_logo_nav.png"
+        src="/OAI_Logo_transparent.png"
         alt="Oak Island AI"
         style={{
           height: size,

@@ -153,7 +153,7 @@ function AuthorCard() {
           <div className="card-dark">
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <img
-                src="/images/OAI_logo_footer.png"
+                src="/OAI_Logo_transparent.png"
                 alt="Oak Island AI"
                 width="160"
                 height="160"

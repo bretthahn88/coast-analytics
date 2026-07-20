@@ -9,7 +9,7 @@ export function Footer() {
         <div>
           <div className="flex items-start gap-4">
             <img
-              src="/images/OAI_logo_footer.png"
+              src="/OAI_Logo_transparent.png"
               alt="Oak Island AI"
               style={{ width: 96, height: 'auto', display: 'block', flex: 'none' }}
             />
